@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Attendance Calculator</h2>
+        <label for="percentageRequired">Percentage Required:</label>
+        <select id="percentageRequired">
+            <option value="60">60%</option>
+            <option value="65">65%</option>
+            <option value="75">75%</option>
+            <option value="80">80%</option>
+        </select>
+
+        <label for="present">Present:</label>
+        <input type="number" id="present" placeholder="Enter Present Days">
+
+        <label for="total">Total:</label>
+        <input type="number" id="total" placeholder="Enter Total Days">
+
+        <button onclick="calculateAttendance()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
