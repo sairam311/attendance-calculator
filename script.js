@@ -13,7 +13,7 @@ function calculateAttendance() {
     // If current attendance is less than required, show "Go to class!"
     if (currentAttendance < percentageRequired) {
         document.getElementById("result").innerHTML = `
-            <p style='color: red; font-weight: bold;'>🚨 class ki vellu ra p*ka 🚨</p>
+            <p style='color: red; font-weight: bold;'>🚨 Get ready to pay condonation 🚨</p>
             <p>Current Attendance: ${present}/${total} → <b>${currentAttendance.toFixed(2)}%</b></p>
         `;
         return;
